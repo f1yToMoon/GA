@@ -149,6 +149,7 @@ void MainWindow::on_pushButton_clicked()
             double val = (double) rand() / RAND_MAX;
             if (val < mutationPercentage) {
                 init[i].first.first = init[i].first.first + -0.25 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(0.5)));
+                init[i].first.second = init[i].first.second + -0.25 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(0.5)));
             }
         }
 
