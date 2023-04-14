@@ -136,17 +136,6 @@ void MainWindow::on_pushButton_clicked()
     //_________________________________________________________________________________________________
     for (int k = 0; k < gen; ++k) {
 
-        //selection
-        /*for (int i = 0; i < chromosomes / 2; ++i) {
-            init[i + chromosomes / 2].first.first = init[i].first.first;
-            init[i + chromosomes / 2].first.second = init[i].first.second;
-        }*/
-
-        //crossover
-        /*for (int i = 0; i < chromosomes / 2; ++i) {
-            swap(init[i].first.second, init[(chromosomes - 1) - i].first.second);
-        }*/
-
         //crossover
         for (int i = 0; i < chromosomes / 4; ++i) {
             init[i + chromosomes / 2].first.first = (init[i].first.first + init[chromosomes / 2 - 1 - i].first.first) / 2;
